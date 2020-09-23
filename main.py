@@ -86,7 +86,7 @@ if len(sys.argv) == 2:
 def preprocessing(img):
     img_preprocessed = img.copy()
     img_preprocessed = cv2.equalizeHist(img_preprocessed)
-    img_preprocessed = cv2.GaussianBlur(img_preprocessed, (3, 3), 0)
+    img_preprocessed = cv2.GaussianBlur(img_preprocessed, (5, 5), 0)
     return img_preprocessed
 
 
